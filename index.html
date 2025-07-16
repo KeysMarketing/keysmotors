@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://i.imgur.com/69iWb3Q.mp4" as="video" type="video/mp4">
     
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
@@ -42,7 +43,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <video class="hero-video" autoplay muted loop playsinline>
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
             <source src="https://i.imgur.com/69iWb3Q.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay"></div>
@@ -63,7 +64,7 @@
             <h2 class="section-title fade-in">Turnkey European Performance</h2>
             <div class="why-us-grid">
                 <div class="why-us-large fade-in-left">
-                    <img src="https://i.imgur.com/8NVMNbU.jpeg" alt="BMW headlight detail">
+                    <img src="https://i.imgur.com/8NVMNbU.jpeg" alt="BMW headlight detail" loading="lazy">
                     <div class="why-us-overlay">
                         <h3>The Best in Wholesale</h3>
                         <p>Direct access to premium European vehicles at wholesale prices</p>
@@ -71,14 +72,14 @@
                 </div>
                 <div class="why-us-stack">
                     <div class="why-us-small fade-in-right">
-                        <img src="https://i.imgur.com/Wq0ZdLE.jpeg" alt="Audi taillight">
+                        <img src="https://i.imgur.com/Wq0ZdLE.jpeg" alt="Audi taillight" loading="lazy">
                         <div class="why-us-overlay">
                             <h3>Clean Carfax™</h3>
                             <p>Transparent vehicle history reports</p>
                         </div>
                     </div>
                     <div class="why-us-small fade-in-right">
-                        <img src="https://i.imgur.com/mCJQQHV.jpeg" alt="BMW i8 detail">
+                        <img src="https://i.imgur.com/mCJQQHV.jpeg" alt="BMW i8 detail" loading="lazy">
                         <div class="why-us-overlay">
                             <h3>Dealer to Dealer</h3>
                             <p>Professional wholesale network serving the trade</p>
