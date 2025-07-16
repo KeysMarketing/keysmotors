@@ -42,42 +42,44 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg"></div>
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://i.imgur.com/69iWb3Q.mp4" type="video/mp4">
+        </video>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Boulder's best Euro exotics and classics</h1>
-            <div class="hero-cta">
+            <h1 class="hero-title fade-in">Boulder's best Euro exotics and classics</h1>
+            <div class="hero-cta fade-in">
                 <a href="#contact" class="btn btn-primary">Start Your Search</a>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-indicator fade-in">
             <div class="mouse"></div>
         </div>
     </section>
 
-    <!-- Showcase Section -->
-    <section id="excellence" class="showcase">
+    <!-- Why Us Section -->
+    <section id="excellence" class="why-us">
         <div class="container">
-            <h2 class="section-title">Turnkey European Performance</h2>
-            <div class="showcase-grid">
-                <div class="showcase-large">
+            <h2 class="section-title fade-in">Turnkey European Performance</h2>
+            <div class="why-us-grid">
+                <div class="why-us-large fade-in-left">
                     <img src="https://i.imgur.com/8NVMNbU.jpeg" alt="BMW headlight detail">
-                    <div class="showcase-overlay">
+                    <div class="why-us-overlay">
                         <h3>The Best in Wholesale</h3>
                         <p>Direct access to premium European vehicles at wholesale prices</p>
                     </div>
                 </div>
-                <div class="showcase-stack">
-                    <div class="showcase-small">
+                <div class="why-us-stack">
+                    <div class="why-us-small fade-in-right">
                         <img src="https://i.imgur.com/Wq0ZdLE.jpeg" alt="Audi taillight">
-                        <div class="showcase-overlay">
+                        <div class="why-us-overlay">
                             <h3>Clean Carfax™</h3>
                             <p>Transparent vehicle history reports</p>
                         </div>
                     </div>
-                    <div class="showcase-small">
+                    <div class="why-us-small fade-in-right">
                         <img src="https://i.imgur.com/mCJQQHV.jpeg" alt="BMW i8 detail">
-                        <div class="showcase-overlay">
+                        <div class="why-us-overlay">
                             <h3>Dealer to Dealer</h3>
                             <p>Professional wholesale network serving the trade</p>
                         </div>
@@ -93,14 +95,28 @@
         <div class="about-overlay"></div>
         <div class="container">
             <div class="about-content">
-                <h2 class="section-title">Boulder's best imports since 1975</h2>
-                <p class="about-text">
+                <h2 class="section-title fade-in">Boulder's best imports since 1975</h2>
+                <div class="stats-container fade-in">
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="counter" data-target="48">0</span>+</div>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="counter" data-target="1000">0</span>+</div>
+                        <span class="stat-label">Vehicles Sold</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number"><span class="counter" data-target="250">0</span>+</div>
+                        <span class="stat-label">Dealer Partners</span>
+                    </div>
+                </div>
+                <p class="about-text fade-in">
                     Keys Motors started as a pioneer of Euro imports in the 1970s, specializing in wholesale distribution to dealers. Our wholesale-only approach means direct access to premium European vehicles without retail markups, serving dealers, exporters, and qualified buyers throughout Colorado.
                 </p>
-                <p class="about-text">
+                <p class="about-text fade-in">
                     With decades of industry relationships and wholesale expertise, we source exceptional European performance vehicles at true wholesale prices for professional buyers who understand quality.
                 </p>
-                <a href="#contact" class="btn btn-primary">Start the Conversation</a>
+                <a href="#contact" class="btn btn-primary fade-in">Start the Conversation</a>
             </div>
         </div>
     </section>
@@ -108,9 +124,9 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title fade-in">Get In Touch</h2>
             <div class="contact-grid">
-                <div class="contact-form-wrapper">
+                <div class="contact-form-wrapper fade-in-left">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
                             <input type="text" id="name" name="name" required placeholder="Your Name">
@@ -128,12 +144,12 @@
                     </form>
                 </div>
                 <div class="contact-info">
-                    <div class="info-item">
+                    <div class="info-item fade-in-right">
                         <h3>Contact Details</h3>
                         <p><strong>Phone:</strong> <a href="tel:303-818-4006">(303) 818-4006</a></p>
                         <p><strong>Email:</strong> <a href="mailto:keys@keysmotors.com">keys@keysmotors.com</a></p>
                     </div>
-                    <div class="info-item">
+                    <div class="info-item fade-in-right">
                         <h3>Business Hours</h3>
                         <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                         <p>Saturday: 10:00 AM - 4:00 PM</p>
@@ -149,7 +165,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <h4 class="footer-logo">KEYS MOTORS</h4>
+                    <div class="footer-logo-container">
+                        <img src="https://i.imgur.com/cyusLrD.jpeg" alt="Keys Motors" class="footer-logo-img">
+                    </div>
                     <p>Wholesale European Automobiles</p>
                 </div>
                 <div class="footer-column">
