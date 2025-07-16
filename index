@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keys Motors - Boulder's best in Euro exotics and classics since 1975">
+    <title>Keys Motors - Boulder's Best Euro Exotics and Classics</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="nav-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <a href="#home" class="logo">KEYS MOTORS</a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-contact">
+                    <a href="tel:303-818-4006" class="phone-number">(303) 818-4006</a>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Boulder's best Euro exotics and classics</h1>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Start Your Search</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="excellence" class="showcase">
+        <div class="container">
+            <h2 class="section-title">Turnkey European Performance</h2>
+            <div class="showcase-grid">
+                <div class="showcase-large">
+                    <img src="https://i.imgur.com/8NVMNbU.jpeg" alt="BMW headlight detail">
+                    <div class="showcase-overlay">
+                        <h3>The Best in Wholesale</h3>
+                        <p>Direct access to premium European vehicles at wholesale prices</p>
+                    </div>
+                </div>
+                <div class="showcase-stack">
+                    <div class="showcase-small">
+                        <img src="https://i.imgur.com/Wq0ZdLE.jpeg" alt="Audi taillight">
+                        <div class="showcase-overlay">
+                            <h3>Clean Carfax™</h3>
+                            <p>Transparent vehicle history reports</p>
+                        </div>
+                    </div>
+                    <div class="showcase-small">
+                        <img src="https://i.imgur.com/mCJQQHV.jpeg" alt="BMW i8 detail">
+                        <div class="showcase-overlay">
+                            <h3>Dealer to Dealer</h3>
+                            <p>Professional wholesale network serving the trade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-bg"></div>
+        <div class="about-overlay"></div>
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Boulder's best imports since 1975</h2>
+                <p class="about-text">
+                    Keys Motors started as a pioneer of Euro imports in the 1970s, specializing in wholesale distribution to dealers and collectors. Our wholesale-only approach means direct access to premium European vehicles without retail markups, serving dealers, exporters, and qualified buyers throughout Colorado.
+                </p>
+                <p class="about-text">
+                    With decades of industry relationships and wholesale expertise, we source exceptional European performance vehicles at true wholesale prices for professional buyers and collectors who understand quality.
+                </p>
+                <a href="#contact" class="btn btn-primary">Start the Conversation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Contact Details</h3>
+                        <p><strong>Phone:</strong> <a href="tel:303-818-4006">(303) 818-4006</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:keys@keysmotors.com">keys@keysmotors.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: By Appointment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 class="footer-logo">KEYS MOTORS</h4>
+                    <p>Wholesale European Automobiles - Dealers & Collectors Only</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <p>(303) 818-4006</p>
+                    <p>keys@keysmotors.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Keys Motors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
