@@ -83,9 +83,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrolled = window.pageYOffset;
         
         if (scrolled > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            header.style.background = 'rgba(26, 26, 26, 0.98)';
         } else {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.background = 'rgba(26, 26, 26, 0.95)';
         }
     });
     

@@ -100,7 +100,7 @@ h1, h2, h3, h4 {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -114,11 +114,14 @@ h1, h2, h3, h4 {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-charcoal);
     text-decoration: none;
-    letter-spacing: 2px;
+    display: block;
+}
+
+.logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-menu {
@@ -128,7 +131,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-link {
-    color: var(--color-charcoal);
+    color: var(--color-silver);
     text-decoration: none;
     font-weight: 500;
     padding: 8px 16px;
@@ -137,7 +140,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-link:hover {
-    color: var(--color-bmw-blue);
+    color: var(--color-white);
 }
 
 .nav-link::after {
@@ -147,7 +150,7 @@ h1, h2, h3, h4 {
     left: 50%;
     width: 0;
     height: 2px;
-    background: var(--color-bmw-blue);
+    background: var(--color-white);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -157,7 +160,7 @@ h1, h2, h3, h4 {
 }
 
 .phone-number {
-    color: var(--color-bmw-blue);
+    color: var(--color-white);
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
@@ -175,7 +178,7 @@ h1, h2, h3, h4 {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--color-charcoal);
+    background: var(--color-white);
     margin: 3px 0;
     transition: var(--transition);
 }
