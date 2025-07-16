@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (hero) {
         function updateParallax() {
             const scrolled = window.pageYOffset;
-            const parallax = scrolled * 0.3;
+            const parallax = scrolled * 0.1;
             hero.style.transform = `translateY(${parallax}px)`;
             ticking = false;
         }
@@ -165,9 +165,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Success message
-            alert('Thank you for your message! We will respond within 2 hours.');
-            contactForm.reset();
+            // Submit to Formspree
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Thank you for your message! We\'ll be in touch soon.');
+                    contactForm.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwnProperty.call(data, 'errors')) {
+                            alert('Error: ' + data.errors.map(error => error.message).join(', '));
+                        } else {
+                            alert('Oops! There was a problem submitting your form');
+                        }
+                    });
+                }
+            }).catch(error => {
+                alert('Oops! There was a problem submitting your form');
+            });
         });
     }
     

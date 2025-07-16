@@ -85,6 +85,7 @@ body {
     color: var(--color-charcoal);
     line-height: 1.6;
     background: var(--color-white);
+    will-change: scroll-position;
 }
 
 .container {
@@ -126,7 +127,8 @@ h1, h2, h3, h4 {
     color: var(--color-white);
 }
 
-.hero .btn-primary {
+.hero .btn-primary,
+.about .btn-primary {
     background: rgba(255, 255, 255, 0.08);
     color: var(--color-white);
     border: 2px solid rgba(255, 255, 255, 0.15);
@@ -140,7 +142,8 @@ h1, h2, h3, h4 {
     transform: translateY(-2px);
 }
 
-.hero .btn-primary:hover {
+.hero .btn-primary:hover,
+.about .btn-primary:hover {
     background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
@@ -175,6 +178,8 @@ h1, h2, h3, h4 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     transition: all 0.3s ease;
+    transform: translate3d(0, 0, 0);
+    will-change: transform, background, backdrop-filter;
 }
 
 .navbar {
@@ -263,6 +268,7 @@ h1, h2, h3, h4 {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    transform: translate3d(0, 0, 0);
 }
 
 .hero-video {
@@ -273,6 +279,9 @@ h1, h2, h3, h4 {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    will-change: transform;
 }
 
 .hero-overlay {
